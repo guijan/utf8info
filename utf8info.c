@@ -263,6 +263,6 @@ printhex(unsigned char byte)
 {
 	static const char alphabet[16] = "0123456789ABCDEF";
 
-	putchar(alphabet[byte & 0x0F]);
 	putchar(alphabet[byte >> 4]);
+	putchar(alphabet[byte & 0x0F]);
 }
